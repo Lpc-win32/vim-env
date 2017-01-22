@@ -4,7 +4,7 @@ set -x
 
 mkdir -p ~/.vim/bundle
 
-cp -r molokai/colors ~/.vim
+cp -r colors ~/.vim
 
 if [ -f ~/.vimrc ] then
 	mv ~/.vimrc ~/.vimrc_
