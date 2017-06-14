@@ -17,6 +17,8 @@ colorscheme desert
 :set cindent
 :set incsearch
 
+nmap ;/ :nohls<CR>
+
 nmap <F4> :!ctags -R<CR><CR>
 
 " Vundle
@@ -59,3 +61,8 @@ let g:tagbar_ctags_bin='ctags'
 let g:tagbar_width=20
 let g:tagbar_autofocus=1
 nmap <F5> :Tagbar<CR>
+
+" a.vim
+Bundle 'vim-scripts/a.vim'
+nmap gs :A<CR>
+nmap gS :AV<CR>
