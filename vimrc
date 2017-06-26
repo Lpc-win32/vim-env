@@ -66,3 +66,14 @@ nmap <F5> :Tagbar<CR>
 Bundle 'vim-scripts/a.vim'
 nmap gs :A<CR>
 nmap gS :AV<CR>
+
+" auto insert file header
+autocmd BufNewFile *.h,*.cpp,*.c exec ":call SetTitle()"
+func SetTitle()
+    call setline(1, "\/*")
+    call setline(2, " * FileName : ".expand("%"))
+    call setline(3, " * Author   : Pengcheng Liu(Lpc-Win32)")
+    call setline(4, " * Date     : ".strftime("%c")."   Created")
+    call setline(5, "*\/")
+    call setline(6, "")
+endfunc

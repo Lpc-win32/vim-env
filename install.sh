@@ -11,7 +11,7 @@ then
 	mv ~/.vimrc ~/.vimrc_
 fi
 
-cp ./.vimrc ~
+cp ./vimrc ~/.vimrc
 
 echo 'next step will expend long time, please wait'
 
@@ -22,7 +22,7 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.sh --clang-completer
 
-cp ./.ycm_extra_conf.py ~/.vim -f
+cp -f ./ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 
 ldconfig
 
