@@ -22,6 +22,7 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.sh --clang-completer
 
+cd -
 cp -f ./ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 
 ldconfig
